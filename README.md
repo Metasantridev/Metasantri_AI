@@ -6,10 +6,6 @@
 
 ### *Platform Belajar Islam Berbasis AI untuk Santri, Ustadz, dan Muslim Indonesia*
 
-[![Next.js](https://img.shields.io/badge/Next.js-15-black?logo=next.js&logoColor=white)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-strict-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org)
-[![Supabase](https://img.shields.io/badge/Supabase-Postgres%20%2B%20Auth-3ECF8E?logo=supabase&logoColor=white)](https://supabase.com)
-[![Cloudflare](https://img.shields.io/badge/Cloudflare-Vectorize%20RAG-F38020?logo=cloudflare&logoColor=white)](https://cloudflare.com)
 [![Status](https://img.shields.io/badge/status-🟢%20Live-brightgreen)]()
 [![Made in Indonesia](https://img.shields.io/badge/🇮🇩-Made%20in%20Indonesia-red)]()
 
@@ -34,26 +30,26 @@ Dibangun untuk:
 
 ## 🤖 5 Mode AI
 
-| Mode | Model | Deskripsi | Akses |
-|------|-------|-----------|-------|
-| ⚡ **Flash** | hy3 | Jawaban cepat untuk pertanyaan umum | Free |
-| 🎒 **Kang Santri** | nex-n2-mini | Gaya santri, bahasa santai + dalil | Free |
-| 👳 **Ustadz** | nex-n2-mini | Jawaban formal dengan referensi kitab | Pro+ |
-| 🧕 **Kiyai** | DeepSeek-R1 | Analisis mendalam, ijtihad kontemporer | Pro+ |
-| 📚 **Ulama** | DeepSeek-R1 | Mode riset + komparasi mazhab | Plus |
+| Mode | Deskripsi | Akses |
+|------|-----------|-------|
+| ⚡ **Flash** | Jawaban cepat untuk pertanyaan umum sehari-hari | Free |
+| 🎒 **Kang Santri** | Gaya santri, bahasa santai tapi tetap pakai dalil | Free |
+| 👳 **Ustadz** | Jawaban formal dengan referensi kitab lengkap | Pro+ |
+| 🧕 **Kiyai** | Analisis mendalam, ijtihad untuk masalah kontemporer | Pro+ |
+| 📚 **Ulama** | Mode riset paling detail + komparasi mazhab | Plus |
 
 ---
 
 ## 🧠 Fitur Utama
 
 ### 📚 RAG Kitab Pesantren
-Lebih dari **156.000 chunks** dari **19+ kitab klasik pesantren** diindex menggunakan Cloudflare Vectorize. Setiap jawaban AI bisa disertai kutipan langsung dari kitab asli.
+Lebih dari **156.000 potongan teks** dari **19+ kitab klasik pesantren** — dan terus bertambah menuju target 110 kitab. Setiap jawaban AI bisa disertai kutipan langsung dari kitab asli, bukan karangan.
 
-Kitab yang sudah ter-index:
+Kitab yang sudah tersedia:
 > Fathul Qarib · Safinah · Taqrib · Arba'in Nawawi · Bulughul Maram · Riyadhus Shalihin · Al-Umm · Minhajut Thalibin · dan 11+ kitab lainnya
 
 ### ✍️ I'rab & Nahwu Otomatis
-Kirim teks Arab → AI langsung analisis i'rab nahwu lengkap dengan istilah Arab asli (فَاعِلٌ، مَرْفُوعٌ، مُبْتَدَأٌ dst), bukan transliterasi Latin.
+Kirim teks Arab → AI langsung analisis i'rab nahwu lengkap dengan istilah Arab asli (فَاعِلٌ، مَرْفُوعٌ، مُبْتَدَأٌ dst), persis seperti diajarkan di pesantren — bukan transliterasi Latin.
 
 ### 🔎 Bahtsul Masail (Plus)
 Diskusi hukum fiqih kontemporer dengan format Bahtsul Masail pesantren — lengkap dengan metode istidlal dan referensi pendapat ulama.
@@ -61,76 +57,46 @@ Diskusi hukum fiqih kontemporer dengan format Bahtsul Masail pesantren — lengk
 ### 📖 Perpustakaan Kitab (Pro+)
 Akses referensi dari ribuan kitab klasik Islam, bisa dicari dan dikutip langsung dari chat.
 
+### 🕋 Hafalan Santri (Pro+)
+Fitur bantu hafalan Al-Qur'an dan matan kitab, dengan tracking progress.
+
 ### 📄 Generate Dokumen
 Chat bisa menghasilkan file `.docx`, `.pdf`, `.xlsx` langsung — misalnya: "buatkan jadwal pelajaran santri minggu ini dalam Excel."
 
 ### 🌙 Landing Page Dinamis
 Background langit real-time yang berubah otomatis sesuai waktu (subuh, siang, maghrib, isya) menggunakan kalkulasi waktu sholat Indonesia.
 
----
-
-## 🛠️ Tech Stack
-
-```
-Frontend      Next.js 15 (App Router) + TypeScript + Tailwind CSS
-Auth & DB     Supabase (Postgres + Auth + Row Level Security)
-AI Gateway    Aivene API (multi-model routing)
-Vector DB     Cloudflare Vectorize (RAG + semantic search)
-Embedding     OpenAI text-embedding-3-small via CF Worker
-Payment       Midtrans (payment gateway Indonesia)
-Deploy        Vercel (Edge Functions + CDN)
-PWA           @ducanh2912/next-pwa (installable di Android/iOS)
-File Gen      docx · jspdf · jszip · xlsx
-```
-
----
-
-## 🏗️ Arsitektur Sistem
-
-```
-User Browser
-     │
-     ▼
-Next.js 15 (Vercel)
-├── App Router (SSR + API Routes)
-├── /api/stream    ──► Aivene Gateway ──► DeepSeek-R1 / nex-n2 / hy3
-├── /api/rag       ──► Cloudflare Worker
-│                           │
-│                    CF Vectorize (156k+ chunks)
-│                    + Supabase (kitab metadata)
-│
-├── /api/payment   ──► Midtrans Snap
-└── Supabase Auth  ──► Google OAuth + Email/OTP
-```
+### 📱 Bisa Diinstall (PWA)
+Metasantri AI bisa di-install langsung ke HP Android/iOS seperti aplikasi native, tanpa perlu buka Play Store.
 
 ---
 
 ## 💰 Model Bisnis
 
-| Plan | Harga | Token | Mode AI | Fitur |
-|------|-------|-------|---------|-------|
-| **Free** | Gratis | 10K / 5 jam | Flash, Kang Santri | Chat dasar |
-| **Pro** | Rp 29.000/bln | 500K / 7 hari | + Ustadz, Kiyai | Hafalan, Perpustakaan |
-| **Plus** | Rp 59.000/bln | 1.5M / bulan | + Ulama | + Bahtsul Masail, prioritas |
+| Plan | Harga | Mode AI | Fitur |
+|------|-------|---------|-------|
+| **Free** | Gratis | Flash, Kang Santri | Chat dasar |
+| **Pro** | Rp 29.000/bln | + Ustadz, Kiyai | Hafalan, Perpustakaan |
+| **Plus** | Rp 59.000/bln | + Ulama | + Bahtsul Masail, prioritas |
 
-Token auto-reset. Tidak ada langganan tahunan — bayar bulanan, bisa berhenti kapan saja.
+Bayar bulanan, bisa berhenti kapan saja — tidak ada kontrak tahunan.
 
 ---
 
 ## 📊 Status Project
 
-| Komponen | Status |
+| Fitur | Status |
 |----------|--------|
 | Chat AI (5 mode) | ✅ Live |
-| RAG Kitab (CF Vectorize) | ✅ 156k+ chunks, 19 kitab |
-| Token System | ✅ Free/Pro/Plus |
-| Admin Dashboard | ✅ Analytics, RAG, API config |
+| RAG Kitab Pesantren | ✅ 19 kitab, terus bertambah |
+| Sistem Token Free/Pro/Plus | ✅ Live |
+| Admin Dashboard | ✅ Live |
 | Bahtsul Masail | ✅ Plus only |
 | Hafalan + Perpustakaan | ✅ Pro+ |
 | Landing Page | ✅ 16 section, real-time sky |
-| PWA (installable) | ✅ Android + iOS |
-| Payment (Midtrans) | 🚧 Fase 9 — in progress |
-| Expand kitab (110 target) | 🚧 Fase 10 — embedding ongoing |
+| Bisa diinstall (PWA) | ✅ Android + iOS |
+| Payment gateway | 🚧 In progress |
+| Perluasan kitab (target 110) | 🚧 In progress |
 
 ---
 
@@ -138,7 +104,11 @@ Token auto-reset. Tidak ada langganan tahunan — bayar bulanan, bisa berhenti k
 
 **Faisal** · [@Metasantridev](https://github.com/Metasantridev)
 
-Project ini dikerjakan solo sebagai platform edukasi Islam berbasis AI untuk komunitas pesantren dan muslim Indonesia. Dibangun dari nol dengan semangat *"ilmu bermanfaat yang mengalir terus."*
+Santri dari **Pondok Pesantren Demak Rajasinga**, Indramayu, Jawa Barat.
+
+Project ini dikerjakan solo sebagai platform edukasi Islam berbasis AI untuk komunitas pesantren dan muslim Indonesia — dibangun dari nol dengan harapan bisa membawa nama baik pondok dan bermanfaat untuk santri di mana saja.
+
+Terima kasih sebesar-besarnya untuk **Pondok Pesantren Demak Rajasinga** atas ilmu dan didikan yang menjadi dasar dari project ini. 🤲
 
 ---
 
