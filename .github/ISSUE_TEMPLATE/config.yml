@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Diskusi Umum
+    url: https://github.com/Metasantridev/metasantri-ai/discussions
+    about: Untuk pertanyaan umum atau diskusi seputar Metasantri AI
+  - name: 🌐 Coba Metasantri AI
+    url: https://metasantri.vercel.app
+    about: Kunjungi dan coba langsung platform Metasantri AI

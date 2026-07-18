@@ -1,0 +1,40 @@
+name: 📚 Usulan Kitab
+description: Usulkan kitab yang ingin ditambahkan ke basis rujukan Metasantri AI
+title: "[KITAB] "
+labels: ["kitab-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Bantu perluas basis rujukan Metasantri AI menuju target 6.700+ kitab!
+  - type: input
+    id: nama-kitab
+    attributes:
+      label: Nama Kitab
+      placeholder: "Contoh: I'anatut Thalibin"
+    validations:
+      required: true
+  - type: input
+    id: penulis
+    attributes:
+      label: Penulis / Muallif
+      placeholder: "Contoh: Sayyid Bakri"
+  - type: dropdown
+    id: kategori
+    attributes:
+      label: Kategori
+      options:
+        - Fiqih
+        - Hadits
+        - Akidah
+        - Tasawuf
+        - Nahwu / Sharaf
+        - Tafsir
+        - Lainnya
+    validations:
+      required: true
+  - type: textarea
+    id: sumber
+    attributes:
+      label: Sumber Teks (jika ada)
+      description: Link ke sumber digital kitab ini, jika tersedia

@@ -1,5 +1,4 @@
 # Dukung pengembangan Metasantri AI
-# Akan menampilkan tombol "Sponsor" di halaman GitHub repo
-
-# Saweria (donasi Indonesia)
-# custom: https://saweria.co/metasantridev
+# File ini akan menampilkan tombol "Sponsor" di halaman GitHub repo
+github: [Metasantridev]
+custom: ["https://saweria.co/metasantridev", "https://trakteer.id/metasantridev"]

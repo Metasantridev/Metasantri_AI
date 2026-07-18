@@ -1,0 +1,7 @@
+{
+  "ignorePatterns": [
+    { "pattern": "^https://metasantri.vercel.app" }
+  ],
+  "timeout": "10s",
+  "retryOn429": true
+}

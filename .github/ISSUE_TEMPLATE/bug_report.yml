@@ -1,0 +1,44 @@
+name: 🐛 Laporan Bug
+description: Laporkan bug atau masalah pada Metasantri AI
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih sudah meluangkan waktu melaporkan bug pada Metasantri AI!
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi Bug
+      description: Jelaskan bug yang ditemukan
+      placeholder: Jelaskan apa yang terjadi...
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah Reproduksi
+      description: Bagaimana cara memunculkan bug ini?
+      placeholder: |
+        1. Buka halaman...
+        2. Klik...
+        3. Muncul error...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Perilaku yang Diharapkan
+      placeholder: Seharusnya terjadi apa?
+  - type: dropdown
+    id: device
+    attributes:
+      label: Perangkat
+      options:
+        - Desktop / Laptop
+        - Android
+        - iOS
+        - Lainnya
+    validations:
+      required: true

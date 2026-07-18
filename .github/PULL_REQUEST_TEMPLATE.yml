@@ -1,0 +1,18 @@
+name: 📝 Template Pull Request
+description: Format standar untuk kontribusi ke Metasantri AI
+body:
+  - type: textarea
+    id: deskripsi
+    attributes:
+      label: Deskripsi Perubahan
+      placeholder: Jelaskan apa yang diubah dan kenapa
+    validations:
+      required: true
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Checklist
+      options:
+        - label: Sudah ditest secara lokal
+        - label: Tidak mengandung kredensial/API key
+        - label: Sudah mengikuti gaya penulisan dokumentasi yang ada

@@ -2,63 +2,51 @@
 
 ## 🤖 5 Mode AI
 
-Metasantri AI memiliki 5 persona AI yang berbeda, bukan sekadar ganti nama — masing-masing punya system prompt, model, dan threshold RAG yang berbeda.
+Metasantri AI memiliki 5 persona AI yang berbeda — masing-masing dengan gaya jawaban dan tingkat kedalaman yang berbeda.
 
 ### ⚡ Flash
-- **Model**: hy3
 - **Untuk**: Pertanyaan umum, cepat, santai
 - **Ciri**: Jawaban ringkas, bahasa Indonesia informal
 - **Akses**: Free
 
 ### 🎒 Kang Santri
-- **Model**: nex-n2-mini
 - **Untuk**: Teman belajar, gaya bahasa santri
 - **Ciri**: Bahasa campuran (Indonesia + sedikit Arab), tetap pakai dalil
 - **Akses**: Free
 
 ### 👳 Ustadz
-- **Model**: nex-n2-mini
 - **Untuk**: Fatwa & hukum fiqih dengan referensi formal
-- **Ciri**: Selalu sertakan nama kitab + halaman, bahasa formal
-- **RAG threshold**: 0.75
+- **Ciri**: Selalu sertakan nama kitab & halaman, bahasa formal
 - **Akses**: Pro+
 
 ### 🧕 Kiyai
-- **Model**: DeepSeek-R1
 - **Untuk**: Analisis mendalam, ijtihad masalah kontemporer
 - **Ciri**: Reasoning panjang, komparasi pendapat ulama
-- **RAG threshold**: 0.72
 - **Akses**: Pro+
 
 ### 📚 Ulama
-- **Model**: DeepSeek-R1
 - **Untuk**: Riset akademis, komparasi mazhab
 - **Ciri**: Paling detail, sertakan semua referensi yang relevan
-- **RAG threshold**: 0.68
 - **Akses**: Plus
 
 ---
 
 ## 📚 RAG (Retrieval-Augmented Generation)
 
-Ketika user bertanya, sistem secara otomatis:
+Ketika user bertanya, sistem secara otomatis mencari referensi paling relevan dari basis data kitab pesantren sebelum menjawab, sehingga jawaban tidak "mengarang" dalil.
 
-1. **Query embedding** — pertanyaan diubah ke vector
-2. **Semantic search** — cari di 156k+ chunks kitab yang paling relevan
-3. **DalilCard injection** — dalil relevan dimasukkan ke context AI
-4. **Verifikasi sumber** — AI tidak boleh sebut sumber yang tidak ada di context
+**Visi jangka panjang**: mengindex **6.700+ kitab klasik pesantren** — mencakup fiqih, hadits, akidah, nahwu, tasawuf, dan tafsir — sebagai basis rujukan terlengkap untuk AI Islam berbahasa Indonesia. Proses ini sedang berjalan secara bertahap.
 
-### Kitab yang Ter-index (19 dari target 110)
+### Kategori Kitab yang Ditargetkan
 
-| Kategori | Kitab |
-|----------|-------|
+| Kategori | Contoh |
+|----------|--------|
 | Fiqih | Fathul Qarib, Safinah, Taqrib, Kifayatul Akhyar |
 | Hadits | Arba'in Nawawi, Bulughul Maram, Riyadhus Shalihin |
 | Fiqih Mazhab | Al-Umm (Imam Syafi'i), Minhajut Thalibin |
 | Akidah | Aqidatul Awam, Sanusiyyah |
 | Tasawuf | Al-Hikam, Minhajul Abidin |
 | Nahwu | Jurumiyyah, Alfiyyah Ibnu Malik |
-| + 5 kitab lainnya | |
 
 ---
 
@@ -83,7 +71,7 @@ Fitur andalan untuk santri yang belajar bahasa Arab:
 
 ## 🔎 Bahtsul Masail
 
-Fitur khusus untuk diskusi hukum fiqih kontemporer (Plus only).
+Fitur khusus untuk diskusi hukum fiqih kontemporer.
 
 Format output mengikuti standar Bahtsul Masail pesantren:
 - **Masalah**: rumusan pertanyaan hukum
@@ -109,13 +97,11 @@ Sistem otomatis mendeteksi intent generate dokumen dari kalimat user — tidak p
 
 ## 👤 Admin Dashboard
 
-Dashboard admin dengan data real-time (bukan mock):
+Dashboard admin dengan data real-time:
 
-- **Users**: list semua user, cari, lihat detail, ubah plan manual
-- **API Config**: kelola API key Aivene/Gemini, aktifkan/nonaktifkan per key
-- **RAG Monitor**: statistik kitab ter-index, jumlah chunks, score rata-rata
-- **A/B Test**: bandingkan performa RAG vs non-RAG
-- **Website Settings**: ubah token gratis, harga paket, nama situs — langsung dari UI tanpa redeploy
+- **Users**: kelola user & akses
+- **RAG Monitor**: statistik kitab ter-index
+- **Website Settings**: atur konten & pengaturan dari UI, tanpa perlu redeploy
 
 ---
 
@@ -123,9 +109,9 @@ Dashboard admin dengan data real-time (bukan mock):
 
 Background langit berubah otomatis sesuai waktu nyata:
 
-- **Subuh (04:00–06:00)**: gradien fajar oranye-biru
+- **Subuh**: gradien fajar oranye-biru
 - **Pagi–Siang**: langit cerah dengan efek paralaks
-- **Sore (17:00–18:30)**: golden hour
+- **Sore**: golden hour
 - **Maghrib–Isya**: langit gelap dengan bintang animasi
 - **Malam**: full night sky dengan bulan sabit
 

@@ -1,0 +1,37 @@
+name: 💡 Usulan Fitur
+description: Usulkan fitur baru untuk Metasantri AI
+title: "[FITUR] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Punya ide fitur untuk Metasantri AI? Ceritakan di sini!
+  - type: textarea
+    id: problem
+    attributes:
+      label: Masalah yang Ingin Diselesaikan
+      description: Fitur ini untuk menyelesaikan masalah apa?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Usulan Solusi
+      description: Bagaimana fitur ini seharusnya bekerja?
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Kategori
+      options:
+        - Chat AI
+        - RAG / Rujukan Kitab
+        - Bahtsul Masail
+        - Hafalan
+        - Perpustakaan
+        - Admin Dashboard
+        - Lainnya
+    validations:
+      required: true

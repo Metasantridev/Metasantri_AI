@@ -1,114 +1,140 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/☪️-Metasantri_AI-1a1a2e?style=for-the-badge&logoColor=white" />
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:1e293b&height=200&section=header&text=Metasantri%20AI&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Ilmu%20Islam%20yang%20Mendalam,%20Kapan%20Saja,%20Di%20Mana%20Saja&descAlignY=58&descSize=18" />
 
-# Metasantri AI
+<br/>
 
-### *Platform Belajar Islam Berbasis AI untuk Santri, Ustadz, dan Muslim Indonesia*
+![Prototype](https://img.shields.io/badge/status-🧪%20Prototype-orange?style=for-the-badge)
+![Made in Indonesia](https://img.shields.io/badge/🇮🇩-Made%20in%20Indonesia-red?style=for-the-badge)
+![License](https://img.shields.io/badge/license-Proprietary-lightgrey?style=for-the-badge)
+![Rilis](https://img.shields.io/badge/rilis-segera-blueviolet?style=for-the-badge)
 
-[![Status](https://img.shields.io/badge/status-🟢%20Live-brightgreen)]()
-[![Made in Indonesia](https://img.shields.io/badge/🇮🇩-Made%20in%20Indonesia-red)]()
+<br/>
 
-**Tanya ilmu Islam dan dapat jawaban dengan rujukan jelas — bukan sekadar chatbot generik.**
+### 🕌 *Asisten AI untuk Santri, Ustadz, dan Muslim Indonesia*
 
-[🌐 Coba Sekarang](https://metasantri.vercel.app) · [📖 Dokumentasi](./docs/) · [🐛 Laporkan Bug](https://github.com/Metasantridev/metasantri-ai/issues)
+**Tanya ilmu Islam, dapat jawaban dengan rujukan jelas — bukan sekadar chatbot generik.**
+
+<sub>⚠️ Project ini masih dalam tahap **prototype** dan akan segera dirilis ke publik.</sub>
 
 </div>
 
+<br/>
+
 ---
 
-## ✨ Apa Itu Metasantri AI?
+## ☪️ Tentang Metasantri AI
 
-**Metasantri AI** adalah asisten belajar Islam berbasis AI yang menjawab pertanyaan agama dengan **rujukan yang bisa dipertanggungjawabkan** — nama surah + ayat, perawi + kitab hadits, atau nama kitab ulama klasik. Bukan jawaban ngawur tanpa sumber.
+**Metasantri AI** adalah asisten belajar Islam berbasis kecerdasan buatan yang dirancang untuk menjawab pertanyaan agama dengan **rujukan yang bisa dipertanggungjawabkan** — nama surah & ayat, perawi & kitab hadits, atau nama kitab ulama klasik. Bukan jawaban tanpa sumber.
 
-Dibangun untuk:
-- 🎓 **Santri pesantren** — tanya masalah fiqih, nahwu, atau tafsir kapan saja
-- 🕌 **Ustadz & pengajar** — bantu riset Bahtsul Masail dan referensi kitab
-- 👥 **Muslim umum Indonesia** — "tanya ustadz" versi instan 24 jam
+<table>
+<tr>
+<td align="center" width="33%">
+
+### 🎓
+**Santri Pesantren**
+<br/>
+<sub>Tanya fiqih, nahwu, tafsir kapan saja</sub>
+
+</td>
+<td align="center" width="33%">
+
+### 🕌
+**Ustadz & Pengajar**
+<br/>
+<sub>Riset Bahtsul Masail & referensi kitab</sub>
+
+</td>
+<td align="center" width="33%">
+
+### 👥
+**Muslim Umum**
+<br/>
+<sub>"Tanya ustadz" versi instan 24 jam</sub>
+
+</td>
+</tr>
+</table>
 
 ---
 
 ## 🤖 5 Mode AI
 
+<div align="center">
+
 | Mode | Deskripsi | Akses |
-|------|-----------|-------|
-| ⚡ **Flash** | Jawaban cepat untuk pertanyaan umum sehari-hari | Free |
-| 🎒 **Kang Santri** | Gaya santri, bahasa santai tapi tetap pakai dalil | Free |
-| 👳 **Ustadz** | Jawaban formal dengan referensi kitab lengkap | Pro+ |
-| 🧕 **Kiyai** | Analisis mendalam, ijtihad untuk masalah kontemporer | Pro+ |
+|:---:|:---|:---:|
+| ⚡ **Flash** | Jawaban cepat untuk pertanyaan sehari-hari | Free |
+| 🎒 **Kang Santri** | Gaya santri, santai tapi tetap berdalil | Free |
+| 👳 **Ustadz** | Jawaban formal + referensi kitab lengkap | Pro+ |
+| 🧕 **Kiyai** | Analisis mendalam, ijtihad kontemporer | Pro+ |
 | 📚 **Ulama** | Mode riset paling detail + komparasi mazhab | Plus |
+
+</div>
 
 ---
 
-## 🧠 Fitur Utama
+## ✨ Fitur Utama
 
 ### 📚 RAG Kitab Pesantren
-Lebih dari **156.000 potongan teks** dari **19+ kitab klasik pesantren** — dan terus bertambah menuju target 110 kitab. Setiap jawaban AI bisa disertai kutipan langsung dari kitab asli, bukan karangan.
-
-Kitab yang sudah tersedia:
-> Fathul Qarib · Safinah · Taqrib · Arba'in Nawawi · Bulughul Maram · Riyadhus Shalihin · Al-Umm · Minhajut Thalibin · dan 11+ kitab lainnya
+Target **6.700+ kitab klasik pesantren** akan diindex secara bertahap sebagai basis rujukan jawaban AI — mulai dari kitab fiqih, hadits, akidah, nahwu, hingga tasawuf. Setiap jawaban bisa disertai kutipan langsung dari kitab asli.
 
 ### ✍️ I'rab & Nahwu Otomatis
 Kirim teks Arab → AI langsung analisis i'rab nahwu lengkap dengan istilah Arab asli (فَاعِلٌ، مَرْفُوعٌ، مُبْتَدَأٌ dst), persis seperti diajarkan di pesantren — bukan transliterasi Latin.
 
-### 🔎 Bahtsul Masail (Plus)
+### 🔎 Bahtsul Masail
 Diskusi hukum fiqih kontemporer dengan format Bahtsul Masail pesantren — lengkap dengan metode istidlal dan referensi pendapat ulama.
 
-### 📖 Perpustakaan Kitab (Pro+)
+### 📖 Perpustakaan Kitab
 Akses referensi dari ribuan kitab klasik Islam, bisa dicari dan dikutip langsung dari chat.
 
-### 🕋 Hafalan Santri (Pro+)
-Fitur bantu hafalan Al-Qur'an dan matan kitab, dengan tracking progress.
+### 🕋 Hafalan Santri
+Fitur bantu hafalan Al-Qur'an dan matan kitab, dengan tracking progress belajar.
 
 ### 📄 Generate Dokumen
-Chat bisa menghasilkan file `.docx`, `.pdf`, `.xlsx` langsung — misalnya: "buatkan jadwal pelajaran santri minggu ini dalam Excel."
+Chat bisa menghasilkan file `.docx`, `.pdf`, `.xlsx` langsung dari percakapan — contoh: "buatkan jadwal pelajaran santri minggu ini."
 
 ### 🌙 Landing Page Dinamis
-Background langit real-time yang berubah otomatis sesuai waktu (subuh, siang, maghrib, isya) menggunakan kalkulasi waktu sholat Indonesia.
+Background langit berubah otomatis sesuai waktu nyata (subuh, siang, maghrib, isya) berdasarkan waktu sholat Indonesia.
 
-### 📱 Bisa Diinstall (PWA)
-Metasantri AI bisa di-install langsung ke HP Android/iOS seperti aplikasi native, tanpa perlu buka Play Store.
-
----
-
-## 💰 Model Bisnis
-
-| Plan | Harga | Mode AI | Fitur |
-|------|-------|---------|-------|
-| **Free** | Gratis | Flash, Kang Santri | Chat dasar |
-| **Pro** | Rp 29.000/bln | + Ustadz, Kiyai | Hafalan, Perpustakaan |
-| **Plus** | Rp 59.000/bln | + Ulama | + Bahtsul Masail, prioritas |
-
-Bayar bulanan, bisa berhenti kapan saja — tidak ada kontrak tahunan.
+### 📱 Bisa Diinstall
+Metasantri AI bisa di-install langsung ke HP seperti aplikasi native, tanpa Play Store.
 
 ---
 
-## 📊 Status Project
+## 📊 Status Pengembangan
+
+<div align="center">
 
 | Fitur | Status |
-|----------|--------|
+|:---|:---:|
 | Chat AI (5 mode) | ✅ Live |
-| RAG Kitab Pesantren | ✅ 19 kitab, terus bertambah |
-| Sistem Token Free/Pro/Plus | ✅ Live |
+| RAG Kitab Pesantren | 🚧 Prototype |
 | Admin Dashboard | ✅ Live |
-| Bahtsul Masail | ✅ Plus only |
-| Hafalan + Perpustakaan | ✅ Pro+ |
-| Landing Page | ✅ 16 section, real-time sky |
-| Bisa diinstall (PWA) | ✅ Android + iOS |
-| Payment gateway | 🚧 In progress |
-| Perluasan kitab (target 110) | 🚧 In progress |
+| Bahtsul Masail | ✅ Live |
+| Hafalan + Perpustakaan | ✅ Live |
+| Landing Page | ✅ Live |
+| Bisa diinstall (PWA) | ✅ Live |
+| Rilis publik | 🔜 Segera |
+
+</div>
 
 ---
 
-## 👤 Developer
+## 👤 Pendiri
 
-**Faisal** · [@Metasantridev](https://github.com/Metasantridev)
+<div align="center">
 
-Santri dari **Pondok Pesantren Demak Rajasinga**, Indramayu, Jawa Barat.
+### **Faisal Dev**
+[@Metasantridev](https://github.com/Metasantridev)
 
-Project ini dikerjakan solo sebagai platform edukasi Islam berbasis AI untuk komunitas pesantren dan muslim Indonesia — dibangun dari nol dengan harapan bisa membawa nama baik pondok dan bermanfaat untuk santri di mana saja.
+Santri dari **Pondok Pesantren Demak Rajasinga**, Indramayu, Jawa Barat, Indonesia.
 
-Terima kasih sebesar-besarnya untuk **Pondok Pesantren Demak Rajasinga** atas ilmu dan didikan yang menjadi dasar dari project ini. 🤲
+*Dikerjakan solo dengan harapan bisa membawa nama baik pondok dan bermanfaat untuk santri di mana saja.*
+
+**Terima kasih sebesar-besarnya untuk Pondok Pesantren Demak Rajasinga** atas ilmu dan didikan yang menjadi dasar dari project ini. 🤲
+
+</div>
 
 ---
 
@@ -116,7 +142,7 @@ Terima kasih sebesar-besarnya untuk **Pondok Pesantren Demak Rajasinga** atas il
 
 Source code project ini **proprietary / closed source**. Repo ini adalah showcase publik.
 
-Untuk kolaborasi, integrasi pesantren, atau pertanyaan bisnis: buka [Issue](https://github.com/Metasantridev/metasantri-ai/issues) atau hubungi via GitHub.
+Untuk kolaborasi, pertanyaan, atau dukungan: buka [Issue](https://github.com/Metasantridev/metasantri-ai/issues) atau lihat [cara berkontribusi](./.github/CONTRIBUTING.md).
 
 ---
 
@@ -125,5 +151,7 @@ Untuk kolaborasi, integrasi pesantren, atau pertanyaan bisnis: buka [Issue](http
 *Dibangun dengan ❤️ untuk santri Indonesia*
 
 **بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيم**
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1e293b,100:0f172a&height=100&section=footer" />
 
 </div>

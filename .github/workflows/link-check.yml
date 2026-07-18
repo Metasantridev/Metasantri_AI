@@ -1,0 +1,19 @@
+name: 🔗 Cek Link Dokumentasi
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "**/*.md"
+  workflow_dispatch:
+
+jobs:
+  linkcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Cek link mati di file Markdown
+        uses: gaurav-nelson/github-action-markdown-link-check@v1
+        with:
+          use-quiet-mode: "yes"
+          config-file: ".github/mlc_config.json"
