@@ -9,7 +9,7 @@ jobs:
   stale:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/stale@v9
+      - uses: actions/stale@v10
         with:
           stale-issue-message: "Issue ini belum ada aktivitas selama 60 hari. Akan ditutup otomatis jika tidak ada respons dalam 7 hari."
           days-before-stale: 60
