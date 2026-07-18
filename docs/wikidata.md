@@ -15,7 +15,7 @@ Developer (P178): Metasantridev (Faisal)
 Country of origin (P495): Indonesia (Q252)
 Programming language (P277): TypeScript (Q978185) / JavaScript (Q2005)
 Official website (P856): https://metasantri.vercel.app
-GitHub (P10627): https://github.com/Metasantridev/metasantri-ai
+GitHub (P10627): https://github.com/Metasantridev/Metasantri_AI
 Inception (P571): 2025
 Platform (P400): web browser (Q689)
 Interface language (P407): Indonesian (Q9240)

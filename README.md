@@ -148,7 +148,7 @@ Santri dari **Pondok Pesantren Demak Rajasinga**, Indramayu, Jawa Barat, Indones
 
 Source code project ini **proprietary / closed source**. Repo ini adalah showcase publik.
 
-Untuk kolaborasi, pertanyaan, atau dukungan: buka [Issue](https://github.com/Metasantridev/metasantri-ai/issues) atau lihat [cara berkontribusi](./.github/CONTRIBUTING.md).
+Untuk kolaborasi, pertanyaan, atau dukungan: buka [Issue](https://github.com/Metasantridev/Metasantri_AI/issues) atau lihat [cara berkontribusi](./.github/CONTRIBUTING.md).
 
 ---
 

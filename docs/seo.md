@@ -45,4 +45,4 @@ AI Islam Indonesia, chatbot pesantren, asisten AI santri, RAG kitab kuning, AI f
 - README utama: [../README.md](../README.md)
 - Fitur lengkap: [./features.md](./features.md)
 - Roadmap pengembangan: [./roadmap.md](./roadmap.md)
-- GitHub: [github.com/Metasantridev/metasantri-ai](https://github.com/Metasantridev/metasantri-ai)
+- GitHub: [github.com/Metasantridev/Metasantri_AI](https://github.com/Metasantridev/Metasantri_AI)
