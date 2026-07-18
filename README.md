@@ -11,11 +11,11 @@
 
 <br/>
 
-### 🕌 *Asisten AI untuk Santri, Ustadz, dan Muslim Indonesia*
+### *Asisten AI untuk Santri, Ustadz, dan Muslim Indonesia*
 
 **Tanya ilmu Islam, dapat jawaban dengan rujukan jelas — bukan sekadar chatbot generik.**
 
-<sub>⚠️ Project ini masih dalam tahap **prototype** dan akan segera dirilis ke publik.</sub>
+<sub>Project ini masih dalam tahap **prototype** dan akan segera dirilis ke publik.</sub>
 
 <br/>
 
@@ -27,7 +27,7 @@
 
 ---
 
-## ☪️ Tentang Metasantri AI
+## Tentang Metasantri AI
 
 **Metasantri AI** adalah asisten belajar Islam berbasis kecerdasan buatan yang dirancang untuk menjawab pertanyaan agama dengan **rujukan yang bisa dipertanggungjawabkan** — nama surah & ayat, perawi & kitab hadits, atau nama kitab ulama klasik. Bukan jawaban tanpa sumber.
 
@@ -65,7 +65,7 @@
 
 ---
 
-## 🤖 5 Mode AI
+## 5 Mode AI
 
 <div align="center">
 
@@ -81,7 +81,7 @@
 
 ---
 
-## ✨ Fitur Utama
+## Fitur Utama
 
 ### 📚 RAG Kitab Pesantren
 Target **6.700+ kitab klasik pesantren** diindex **secara bertahap** sebagai basis rujukan jawaban AI — mulai dari kitab fiqih, hadits, akidah, nahwu, hingga tasawuf. Setiap jawaban bisa disertai kutipan langsung dari kitab asli.
@@ -127,7 +127,7 @@ Metasantri AI bisa di-install langsung ke HP seperti aplikasi native, tanpa Play
 
 ---
 
-## 👤 Pendiri
+## Pengembang (Developer)
 
 <div align="center">
 
@@ -136,7 +136,7 @@ Metasantri AI bisa di-install langsung ke HP seperti aplikasi native, tanpa Play
 
 Santri dari **Pondok Pesantren Demak Rajasinga**, Indramayu, Jawa Barat, Indonesia.
 
-*Dikerjakan solo dengan harapan bisa membawa nama baik pondok dan bermanfaat untuk santri di mana saja.*
+*Dikerjakan Fullstack solo dev dengan harapan bisa membawa nama baik pondok dan bermanfaat untuk santri di mana saja.*
 
 **Terima kasih sebesar-besarnya untuk Pondok Pesantren Demak Rajasinga** atas ilmu dan didikan yang menjadi dasar dari project ini. 🤲
 
